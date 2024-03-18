@@ -48,18 +48,10 @@ programa {
 
     }
 
-    // FAZER UM LOOPING PARA O PROGRAMA RODAR NOVAMENTE OU DESLIGA-LO, BOOLEANO
     
-    
-   escreva("Deseja reiniciar o programa (1) ou finalizar (2)? ")
-        leia(opcao)
-
-        se (opcao) = 2 entao
-            escreva("Programa finalizado.")
-        senao
-            se opcao <> 1 entao
-                escreva("Opção inválida. Por favor, escolha 1 para reiniciar ou 2 para finalizar.")
-            fimse
-        fimse
-        ate opcao = 2
-        fimalgoritmo
+// perguntar se deseja continuar
+      escreva("Deseja fazer outra operação? (1 - Sim / 2 - Não): ")
+      leia(opcao)
+    } enquanto (opcao == 1)
+  }
+}

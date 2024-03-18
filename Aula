@@ -44,7 +44,7 @@ programa {
       escreva ("O resultado da divisão é: ",dividir)
     }
     senao{
-      escreva ("Operção invalida")
+      escreva ("Operação invalida")
 
     }
 

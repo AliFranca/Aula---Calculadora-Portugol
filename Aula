@@ -1,0 +1,65 @@
+programa {
+  funcao inicio() {
+
+
+    //variaveis
+    real soma, subtrair, dividir, multiplicar
+    real n1, n2
+    real op
+    real yes
+    real no
+    real opcao 
+
+    //entrada
+    escreva("Qual operação você deseja realizar? \n")
+    escreva("Digite 1 para Soma \n")
+    escreva("Digite 2 para subtração \n")
+    escreva("Digite 3 para divisão \n")
+    escreva("Digite 4 para multiplicação \n")
+    leia(op)
+
+    limpa()
+
+    escreva("Informe o 1º número: ")
+    leia (n1)
+    escreva("Informe o 2º número: ")
+    leia (n2)
+
+    //processamento
+    
+    se(op == 1) {
+      soma = n1+n2
+      escreva ("O resultado da soma é: ",soma)
+    }
+    senao se (op == 2){
+      subtrair = n1-n2
+      escreva ("O resultado da subtração é: ",subtrair)
+    }
+    senao se (op == 3){
+      multiplicar = n1*n2
+      escreva ("O resultado da mutiplicação é: ",multiplicar)
+    }
+    senao se (op == 4){
+      dividir = n1/n2
+      escreva ("O resultado da divisão é: ",dividir)
+    }
+    senao{
+      escreva ("Operção invalida")
+
+    }
+
+    // FAZER UM LOOPING PARA O PROGRAMA RODAR NOVAMENTE OU DESLIGA-LO, BOOLEANO
+    
+    
+   escreva("Deseja reiniciar o programa (1) ou finalizar (2)? ")
+        leia(opcao)
+
+        se (opcao) = 2 entao
+            escreva("Programa finalizado.")
+        senao
+            se opcao <> 1 entao
+                escreva("Opção inválida. Por favor, escolha 1 para reiniciar ou 2 para finalizar.")
+            fimse
+        fimse
+        ate opcao = 2
+        fimalgoritmo
